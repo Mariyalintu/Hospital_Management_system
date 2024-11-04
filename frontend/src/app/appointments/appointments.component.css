@@ -1,0 +1,23 @@
+.appointment-container {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Space between form and list */
+}
+
+.appointment-form {
+  flex: 1; /* Allow the form to grow */
+  min-width: 300px; /* Minimum width of the form */
+}
+
+.appointments-list {
+  flex: 1; /* Allow the list to grow */
+  max-width: 400px; /* Maximum width of the list */
+  overflow-y: auto; /* Scrollable if content overflows */
+  border-left: 1px solid #ccc; /* Optional: border between form and list */
+  padding-left: 20px; /* Padding to the left of the list */
+}
+
+.appointment-card {
+  margin-bottom: 20px; /* Space between appointment cards */
+}

@@ -1,0 +1,40 @@
+/* Patient Container Styles */
+.patient-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between the form and list */
+  max-width: 1200px; /* Max width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Patient Form Styles */
+.patient-form {
+  flex: 1; /* Allow the form to take available space */
+  margin-right: 20px; /* Space between form and list */
+}
+
+/* Patient List Styles */
+.patient-list {
+  flex: 1; /* Allow the list to take available space */
+  max-width: 400px; /* Max width for the list */
+}
+
+/* Patient Card Styles */
+.patient-card {
+  margin-bottom: 15px; /* Space between patient cards */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .patient-container {
+    flex-direction: column; /* Stack form and list on smaller screens */
+  }
+
+  .patient-form {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+
+  .patient-list {
+    max-width: 100%; /* Allow full width on smaller screens */
+  }
+}
